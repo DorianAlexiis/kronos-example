@@ -1,0 +1,19 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    style="@style/ToolbarTheme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ToolbarTheme"
+    app:titleTextColor="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_lg" />
+</android.support.v7.widget.Toolbar>

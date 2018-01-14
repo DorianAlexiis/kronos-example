@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0181ff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+
+    <!-- GRAY -->
+    <color name="gray_text">#C5C4C4</color>
+    <color name="gray">#95a5a6</color>
+    <color name="divider">#e1e1e1</color>
+    <!-- /GRAY -->
+
+    <!-- GREEN-->
+    <color name="green">#2ecc71</color>
+    <color name="background_splash">#f1f2f4</color>
+    <!-- /GREEN-->
+</resources>

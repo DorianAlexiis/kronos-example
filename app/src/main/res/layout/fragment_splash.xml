@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_splash"
+    tools:context="com.kronos.example.ui.modules.splash.SplashFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/ivPinBlack"
+                android:src="@drawable/ic_pin_black"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+            <ImageView
+                android:id="@+id/ivPinRed"
+                android:src="@drawable/ic_pin_red"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
