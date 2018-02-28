@@ -263,6 +263,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
         if((mTagFragments.size() == 0 )|| addBackStack){
             mTagFragments.add(tag);
+        }else if (mTagFragments.size() > 0) {
+            mTagFragments.set(mTagFragments.size() - 1, tag);
         }
     }
 
