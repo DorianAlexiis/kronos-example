@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".di.App">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="34b71a9a331bb24c06e87adce6ac161791b20059" />
+
         <activity android:name=".ui.modules.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

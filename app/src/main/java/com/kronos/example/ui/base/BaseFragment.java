@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.kronos.example.R;
 import com.kronos.example.di.components.ApplicationComponent;
+import com.tbruyelle.rxpermissions.RxPermissions;
 
 import butterknife.ButterKnife;
 
@@ -33,11 +34,13 @@ public abstract class BaseFragment extends Fragment {
     private int resToolbar = 0;
     private boolean errorOverrideCreateView;
     private TextView tvTitle;
+    private RxPermissions rxPermissions;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activity = (BaseActivity) getActivity();
+        rxPermissions = new RxPermissions(activity);
         initialize();
         errorOverrideCreateView = savedInstanceState == null || savedInstanceState.getBoolean(KEY_ERROR);
     }
@@ -71,6 +74,8 @@ public abstract class BaseFragment extends Fragment {
                 }
                 mToolbar = (Toolbar) view.findViewById(resToolbar);
                 tvTitle = (TextView) view.findViewById(R.id.tvTitle);
+                mToolbar.setTitle("");
+                mToolbar.setSubtitle("");
                 setToolBar(mToolbar);
                 activity.hideToolbar();
                 haveToolbar = true;
@@ -214,5 +219,7 @@ public abstract class BaseFragment extends Fragment {
         return this.activity.getApplicationComponent();
     }
 
-
+    public RxPermissions getRxPermissions(){
+        return this.rxPermissions;
+    }
 }
