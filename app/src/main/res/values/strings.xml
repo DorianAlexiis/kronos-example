@@ -20,4 +20,10 @@
     <string name="detail.addresses">Direcciones</string>
     <string name="detail.error_detail_contact">Ha podido recuperar la información de contacto</string>
 
+
+    <!-- ADMOB PRUEBA -->
+    <string name="admobs_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admobs_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admobs_ad_unit_id_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+
 </resources>
