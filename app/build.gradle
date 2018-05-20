@@ -8,7 +8,6 @@ buildscript {
     }
 }
 apply plugin: 'com.android.application'
-apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'io.fabric'
 
 android {
@@ -35,59 +34,59 @@ android {
 }
 
 ext {
-    butterKnifeVersion = '8.4.0'
+    butterKnifeVersion = '8.8.1'
     daggerVersion = '2.9'
-    calligraphyVersion = '2.2.0'
+    calligraphyVersion = '2.3.0'
     glideVersion = '3.7.0'
     rxJavaVersion = '1.1.6'
     rxAndroidVersion = '1.2.1'
-    supportLibVersion = '27.1.0'
+    supportLibVersion = '27.1.1'
     retrofitVersion = '2.0.2'
     mockitoVersion = '2.6.2'
     gsonConvVersion = '2.0.0'
     interceptorVersion = '3.3.1'
     gsonVersion = '2.4'
     multidex = '1.0.1'
-    googleServices = '11.8.0'
+    googleServices = '15.0.1'
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
 
-    compile "com.google.android.gms:play-services-ads:$googleServices"
+    implementation "com.google.android.gms:play-services-ads:$googleServices"
 
     //FABRIC
-    compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
         transitive = true
     }
 
     // Network
-    compile "com.github.bumptech.glide:glide:$glideVersion"
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
 
     // Injection
-    compile "com.jakewharton:butterknife:$butterKnifeVersion"
+    implementation "com.jakewharton:butterknife:$butterKnifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
-    compile "com.google.dagger:dagger:$daggerVersion"
+    implementation "com.google.dagger:dagger:$daggerVersion"
     annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
 
     //RxAndroid
-    compile "io.reactivex:rxandroid:$rxAndroidVersion"
-    compile "io.reactivex:rxjava:$rxJavaVersion"
+    implementation "io.reactivex:rxandroid:$rxAndroidVersion"
+    implementation "io.reactivex:rxjava:$rxJavaVersion"
 
     //Gson
-    compile "com.google.code.gson:gson:$gsonVersion"
+    implementation "com.google.code.gson:gson:$gsonVersion"
 
     // UI
-    compile "uk.co.chrisjenx:calligraphy:$calligraphyVersion"
-    compile "com.android.support:cardview-v7:$supportLibVersion"
-    compile "com.android.support:recyclerview-v7:$supportLibVersion"
-    compile "com.android.support:design:$supportLibVersion"
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
+    implementation "uk.co.chrisjenx:calligraphy:$calligraphyVersion"
+    implementation "com.android.support:cardview-v7:$supportLibVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
 
-    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
 }

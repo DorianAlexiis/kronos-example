@@ -96,114 +96,114 @@
                         android:layout_height="match_parent">
 
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <android.support.v7.widget.CardView
+                        <LinearLayout
+                            android:orientation="vertical"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/spacing_5sm">
-                            <FrameLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-                                <LinearLayout
-                                    android:id="@+id/llWithoutElement"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:gravity="center"
-                                    android:visibility="gone"
-                                    android:orientation="vertical">
+                            android:layout_height="wrap_content">
 
-                                    <ImageView
-                                        android:layout_width="45dp"
-                                        android:layout_height="45dp"
-                                        android:src="@drawable/ic_empty" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="@dimen/spacing_2sm"
-                                        android:gravity="center"
-                                        android:text="@string/detail.empty"
-                                        android:textColor="@color/gray_text" />
-
-                                </LinearLayout>
-
-                                <android.support.v7.widget.RecyclerView
-                                    android:id="@+id/rvPhones"
-                                    android:visibility="gone"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="@dimen/spacing_5sm"
-                                    tools:listitem="@layout/item_phone" />
-                            </FrameLayout>
-
-                        </android.support.v7.widget.CardView>
-
-                        <android.support.v7.widget.CardView
-                            android:id="@+id/cvInfo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="@dimen/spacing_5sm">
-                            <LinearLayout
+                            <android.support.v7.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical">
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_margin="@dimen/spacing_5sm"
-                                    android:textColor="@color/colorPrimary"
-                                    android:text="@string/detail.addresses"/>
-                                <View
+                                android:layout_margin="@dimen/spacing_5sm">
+                                <FrameLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="1dp"
-                                    android:background="@color/divider"/>
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:id="@+id/llWithoutElement"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:visibility="gone"
+                                        android:orientation="vertical">
 
-                                <TextView
-                                    android:id="@+id/tvTitleWork"
-                                    android:layout_width="wrap_content"
+                                        <ImageView
+                                            android:layout_width="45dp"
+                                            android:layout_height="45dp"
+                                            android:src="@drawable/ic_empty" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/spacing_2sm"
+                                            android:gravity="center"
+                                            android:text="@string/detail.empty"
+                                            android:textColor="@color/gray_text" />
+
+                                    </LinearLayout>
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/rvPhones"
+                                        android:visibility="gone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/spacing_5sm"
+                                        tools:listitem="@layout/item_phone" />
+                                </FrameLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/spacing_5sm">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:textColor="@color/black"
-                                    android:layout_margin="@dimen/spacing_5sm"
-                                    android:text="@string/detail.work"/>
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/spacing_5sm"
+                                        android:textColor="@color/colorPrimary"
+                                        android:text="@string/detail.addresses"/>
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/divider"/>
 
-                                <TextView
-                                    android:id="@+id/tvWork"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textColor="@color/gray_text"
-                                    android:layout_marginLeft="@dimen/spacing_5sm"
-                                    android:layout_marginRight="@dimen/spacing_5sm"
-                                    android:layout_marginBottom="@dimen/spacing_5sm"
-                                    tools:text="Av. Scalabrini Ortiz 100 4B"/>
+                                    <TextView
+                                        android:id="@+id/tvTitleWork"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:layout_margin="@dimen/spacing_5sm"
+                                        android:text="@string/detail.work"/>
+
+                                    <TextView
+                                        android:id="@+id/tvWork"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/gray_text"
+                                        android:layout_marginLeft="@dimen/spacing_5sm"
+                                        android:layout_marginRight="@dimen/spacing_5sm"
+                                        android:layout_marginBottom="@dimen/spacing_5sm"
+                                        tools:text="Av. Scalabrini Ortiz 100 4B"/>
 
 
-                                <TextView
-                                    android:id="@+id/tvTitleHome"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textColor="@color/black"
-                                    android:layout_margin="@dimen/spacing_5sm"
-                                    android:text="@string/detail.home"/>
+                                    <TextView
+                                        android:id="@+id/tvTitleHome"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:layout_margin="@dimen/spacing_5sm"
+                                        android:text="@string/detail.home"/>
 
-                                <TextView
-                                    android:id="@+id/tvHome"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textColor="@color/gray_text"
-                                    android:layout_marginLeft="@dimen/spacing_5sm"
-                                    android:layout_marginRight="@dimen/spacing_5sm"
-                                    android:layout_marginBottom="@dimen/spacing_5sm"
-                                    tools:text="Echeverria 1010 1A"/>
+                                    <TextView
+                                        android:id="@+id/tvHome"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/gray_text"
+                                        android:layout_marginLeft="@dimen/spacing_5sm"
+                                        android:layout_marginRight="@dimen/spacing_5sm"
+                                        android:layout_marginBottom="@dimen/spacing_5sm"
+                                        tools:text="Echeverria 1010 1A"/>
 
-                            </LinearLayout>
-                        </android.support.v7.widget.CardView>
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
 
-                    </LinearLayout>
+                        </LinearLayout>
                     </ScrollView>
                 </android.support.v4.widget.NestedScrollView>
 
