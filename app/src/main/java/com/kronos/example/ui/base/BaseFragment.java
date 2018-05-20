@@ -8,6 +8,7 @@ import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -139,6 +140,10 @@ public abstract class BaseFragment extends Fragment {
 
     protected void pushFragment(Fragment fragment, int container, boolean addBackStack) {
         activity.pushFragment(fragment, container, addBackStack);
+    }
+
+    protected void pushFragment(DialogFragment fragment) {
+        fragment.show(getFragmentManager(), fragment.getClass().getSimpleName());
     }
 
     protected void dismissDialog() {

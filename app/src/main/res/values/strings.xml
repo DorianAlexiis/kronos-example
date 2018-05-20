@@ -26,4 +26,12 @@
     <string name="admobs_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="admobs_ad_unit_id_interstitial">ca-app-pub-3940256099942544/1033173712</string>
 
+
+    <!-- RATE NOW -->
+    <string name="text_description_rateapp">If you enjoy using this app please take a moment to rate it. Thank you for your support!</string>
+    <string name="dialograteapp_late">LATER</string>
+    <string name="dialograteapp_ratenow">RATE NOW</string>
+
+    <string name="rateapp_with_nameapp">Rate %1$s</string>
+
 </resources>

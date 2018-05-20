@@ -15,5 +15,6 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:text="@string/app_name"
+        android:textColor="@color/white"
         android:textSize="@dimen/text_lg" />
 </android.support.v7.widget.Toolbar>

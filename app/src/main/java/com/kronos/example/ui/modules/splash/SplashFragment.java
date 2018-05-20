@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import com.kronos.example.R;
 import com.kronos.example.ui.base.BaseFragment;
 import com.kronos.example.ui.modules.main.MainFragment;
+import com.kronos.example.ui.modules.rateapp.RateAppDialogFragment;
 
 import javax.inject.Inject;
 
@@ -83,5 +84,7 @@ public class SplashFragment extends BaseFragment implements SplashFragmentView{
     public void gotoMainFragment() {
         finished_splash = true;
         pushFragment(MainFragment.newInstance(), R.id.container, false);
+
+        pushFragment(RateAppDialogFragment.newInstace());
     }
 }
