@@ -14,13 +14,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.dars.base.BaseFragment;
 import com.bumptech.glide.Glide;
 import com.kronos.example.R;
 import com.kronos.example.data.models.Addresses;
 import com.kronos.example.data.models.Contact;
 import com.kronos.example.data.models.Phone;
+import com.kronos.example.di.App;
 import com.kronos.example.ui.adapters.PhonesAdapter;
-import com.kronos.example.ui.base.BaseFragment;
 
 import java.util.List;
 
@@ -104,9 +105,10 @@ public class DetailContactFragment extends BaseFragment implements DetailFragmen
 
     @Override
     public void initialize() {
-        getApplicationComponent().inject(this);
+        ((App) getActivity().getApplication()).getApplicationComponent().inject(this);
         detailContactPresenter.setView(this);
     }
+
 
 
     private void setToolbar(Contact contact){

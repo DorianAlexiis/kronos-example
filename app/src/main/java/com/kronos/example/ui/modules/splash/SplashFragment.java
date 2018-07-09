@@ -7,8 +7,9 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.android.dars.base.BaseFragment;
 import com.kronos.example.R;
-import com.kronos.example.ui.base.BaseFragment;
+import com.kronos.example.di.App;
 import com.kronos.example.ui.modules.main.MainFragment;
 import com.kronos.example.ui.modules.rateapp.RateAppDialogFragment;
 
@@ -76,7 +77,7 @@ public class SplashFragment extends BaseFragment implements SplashFragmentView{
 
     @Override
     public void initialize() {
-        getApplicationComponent().inject(this);
+        ((App) getActivity().getApplication()).getApplicationComponent().inject(this);
         splashFragmentPresenter.setView(this);
     }
 
@@ -85,6 +86,6 @@ public class SplashFragment extends BaseFragment implements SplashFragmentView{
         finished_splash = true;
         pushFragment(MainFragment.newInstance(), R.id.container, false);
 
-        pushFragment(RateAppDialogFragment.newInstace());
+        pushFragment(RateAppDialogFragment.newInstance());
     }
 }

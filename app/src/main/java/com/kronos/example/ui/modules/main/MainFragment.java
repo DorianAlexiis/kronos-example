@@ -10,11 +10,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.dars.base.BaseFragment;
 import com.bumptech.glide.Glide;
 import com.kronos.example.R;
 import com.kronos.example.data.models.Contact;
+import com.kronos.example.di.App;
 import com.kronos.example.ui.adapters.ContactAdapter;
-import com.kronos.example.ui.base.BaseFragment;
 import com.kronos.example.ui.modules.detail.DetailContactFragment;
 import com.kronos.example.utils.RecyclerItemClickListener;
 
@@ -89,7 +90,7 @@ public class MainFragment extends BaseFragment implements MainFragmentView{
 
     @Override
     public void initialize() {
-        getApplicationComponent().inject(this);
+        ((App) getActivity().getApplication()).getApplicationComponent().inject(this);
         mainFragmentPresenter.setView(this);
     }
 

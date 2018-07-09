@@ -3,45 +3,28 @@ package com.kronos.example.ui.modules.rateapp;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.android.dars.base.BaseDialog;
 import com.kronos.example.R;
-import com.kronos.example.ui.base.BaseActivity;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class RateAppDialogFragment extends DialogFragment {
+public class RateAppDialogFragment extends BaseDialog {
 
-    private BaseActivity activity;
 
     @BindView(R.id.tvTitle)
     TextView tvTitle;
 
-    public static RateAppDialogFragment newInstace() {
+    public static RateAppDialogFragment newInstance() {
         return new RateAppDialogFragment();
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        activity = (BaseActivity) getActivity();
-
-        setStyle(DialogFragment.STYLE_NO_TITLE, R.style.MyDialogTheme);
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
-        View mView = inflater.inflate(R.layout.dialog_rateapp, container, false);
-        ButterKnife.bind(this, mView);
-        return mView;
+    public int getDialogLayoutResId() {
+        return R.layout.dialog_rateapp;
     }
 
     @Override
