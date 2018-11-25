@@ -16,6 +16,10 @@
             android:name="io.fabric.ApiKey"
             android:value="34b71a9a331bb24c06e87adce6ac161791b20059" />
 
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admobs_app_id"/>
+
         <activity android:name=".ui.modules.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -127,7 +127,7 @@
                                             android:layout_height="wrap_content"
                                             android:layout_marginTop="@dimen/spacing_2sm"
                                             android:gravity="center"
-                                            android:text="@string/detail.empty"
+                                            android:text="@string/detail_empty"
                                             android:textColor="@color/gray_text" />
 
                                     </LinearLayout>
@@ -157,7 +157,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_margin="@dimen/spacing_5sm"
                                         android:textColor="@color/colorPrimary"
-                                        android:text="@string/detail.addresses"/>
+                                        android:text="@string/detail_addresses"/>
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
@@ -169,7 +169,7 @@
                                         android:layout_height="wrap_content"
                                         android:textColor="@color/black"
                                         android:layout_margin="@dimen/spacing_5sm"
-                                        android:text="@string/detail.work"/>
+                                        android:text="@string/detail_work"/>
 
                                     <TextView
                                         android:id="@+id/tvWork"
@@ -188,7 +188,7 @@
                                         android:layout_height="wrap_content"
                                         android:textColor="@color/black"
                                         android:layout_margin="@dimen/spacing_5sm"
-                                        android:text="@string/detail.home"/>
+                                        android:text="@string/detail_home"/>
 
                                     <TextView
                                         android:id="@+id/tvHome"

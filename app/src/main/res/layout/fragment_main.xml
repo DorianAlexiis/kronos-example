@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/spacing_2sm"
-                tools:text="@string/detail.empty"
+                tools:text="@string/detail_empty"
                 android:layout_margin="@dimen/spacing_3xs"
                 android:textColor="@color/gray_text" />
         </LinearLayout>

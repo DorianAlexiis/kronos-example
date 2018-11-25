@@ -76,15 +76,15 @@ public class PhonesAdapter extends RecyclerView.Adapter<PhonesAdapter.ContactVie
         holder.tvNumber.setText(phone.getNumber());
         holder.tvType.setText(phone.getType());
         switch (phone.getType()){
-            case Constant.TYPE_HOME:
-                holder.ivType.setImageResource(R.drawable.ic_type_home);
-                break;
             case Constant.TYPE_CELLPHONE:
                 holder.ivType.setImageResource(R.drawable.ic_type_cellphone);
                 break;
             case Constant.TYPE_OFFICE:
                 holder.ivType.setImageResource(R.drawable.ic_type_office);
                 break;
+                default:
+                    holder.ivType.setImageResource(R.drawable.ic_type_home);
+                    break;
         }
         holder.divider.setVisibility(position == (list.size()-1) ? View.GONE : View.VISIBLE);
     }
